@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">PORTFOLIO</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li ><a href="index.html">DATA ANALYTICS</a></li>
+						<li><a href="generic.html">MATLAB AND SIMULINK</a></li>
+						<li class="active"><a href="personal .html">OTHER PROJECT</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+					<header class="major">
+						<div class="robot">
+						<h1>Design and development of an Hexapod Robot using Raspberry pi</h1></div>
+						<p>
+							>>>What is the project about? <br>
+							The big hexapod aims to provide higher margin of stability in their tasks performance rejecting inaccuricies like wheel robots. <br><br>
+						</p>
+					</header>
+						<section class="posts">
+
+							<article>
+								<div class="report">
+								<p>
+									>>>What are the problems?<br>
+									The wheeled robot regularly finds itself instable to climb crevices in their way and battles to induce back from its tilted position. whenever there's a (small)step within the way it finds it uneasy to climb. These are a few of the key issues which frequently resists for the utilization of wheeled robots within the industries. The wheel robot has tall insecurities in terms of wrong localization for mechanical robots. While daily fetching data from Evo Robots and turtle bots it has been noted that higher speed lead to higher inaccuracies. In industries even a small margin of error can lead to disastrous accident which often takes stakes of the companies to adapt autonomous robots for this reason. Wheel encoders frequently appears off-base information in surface slipping due to less friction surfaces. how about More frictional surfaces?-Wheels torn down very frequently, dumps heavy load on servos during operation- of course not a good idea. Above this during the time of experiment i often found that the robot never reached its final designated point, it is always slightly off track of where it is supposed be. These are some of the problem which i found in wheeled robots which can be resolved by 6 legged robot. </a></p> <br><br>
+								</div>
+							</article>
+							<article>
+								<div>
+								    <img src="images/pic 21.png" alt="">
+								</div>
+								
+							</article>
+							<article>
+								<img src="images/pic 19.jpg" alt="">
+								<img src="images/pic 21.jpg" alt="">
+							</article>
+							<article>
+								<div class="report">
+								<p>>>>About the robot- A big hexapod: <br>
+									6 legs yields additional soundness and mobility, particularly when climbing something like a small step of few centimetres . With 4 or less legs, the robot ought to be exceptionally cautious around how it positions its centre of gravity and which legs are off the ground, so as not to drop over. With 6 or more legs, the robot (like insects) can lift different legs up without tipping over. It also implies, from a mechanical technology perspective, the calculations for locomotion don't fundamentally ought to be closed circle, and don't fundamentally got to take into thought the force or centre of gravity of the robot. Hence, controlling such a robot, indeed is really simpler. Moreover, having more legs can too offer assistance spread the weight of a stack to more focuses of contact, for case, on the off chance that carrying some object . I am using  18servos since I have 6 legs and each leg I  will have 3DOF (Degrees of freedom).<br> <br>
+									
+									RC Servo motors are by distant your best known both for less improvement time and appropriateness for the work, and most vitally fetched. Here i have used MG996R servo with stall torque of 13kg at 4.8V with all metal gears. A version of raspberry pi 4B is used with Raspberry pi OS installed and all the functions are programmed in python 3. There is also an ultrasonic sensor along with camera underneath, 6 legs consisting of 3 MG996R servo each, a buzzer and an accelerometer. all the servos are connected with spider shield and an I2C controlled by Rpi.</p> <br>
+								</div>
+							</article>
+						    <article>
+								<div class="report">
+								<p>
+									>>>What kind of impact does it bring?<br>
+									Here the challenge is to find an optimal motion for complex manoeuvres and execute them on a real robot robustly. let’s take for case there's an object A with 6 x 100gm weight stacked which needs to be carried from point A to point B with various obstacles to follow thought for the hexapod amid the time of manoeuvre ,3 alternative legs takes a step to move robot and other 3 alternative legs the stall to hold the load . If it was a 4 legged robot it would nt be able to balance the load of an object with 2 legs simultaneously during the time of movement. The only way which seems practically possible it can perform is by taking single-single steps by each legs which again is very time inefficient. For this purpose, A wheeled robot often seems to be a good option. Lets take for instance the track has an elevation and it has to reach to its desired point The elevation is enough to prevent wheel of the robot to move forward. This kind of problem, step and elevation can often be validated by using hexapod instead. Using hexapod can often provide good balance to the stacked queue and prevent it from falling over. The error margin or the destined point B is also less compared to the wheeled robot. 6 Legged robot often solves the issues which i have determined and faced daily. But there are other consequences i face using hexapod which are yet to be discovered.<br> <br>
+								</p>
+								</div>
+							</article>
+
+							<article>
+								<a href=""></a>
+							</article>
+							
+							
+							<article>
+								<img src="images/pic 20.png" alt="">
+								<p>Credits: Ekta Rana (Student in Mechatronics at FHWS) <br>
+									Powered by Autodesk Fusion 360
+								</p>
+							</article>
+
+							<div>
+								<p>
+									>>>Vision: <br>
+                                    Currently The robot is at very Early stage of its development and has been visioned for attaching a 3D printed Arm for grabbing an object(shown in figure below) .Later the LiDAR sensor for localization is also to be mounted along with depth camera. While mounting an arm on the hexapod I also had to make sure of the centre of gravity acting during the time the robot is picking up the object. It is very important for the robot not to tilt sidewards while picking the desired object. As the robot identifies the object it is again not sure about the weight of the object it is picking up. Lifting the object with the higher weight than load Capacity can result into deformation of robot components. Placing a weighing sensor would be a good idea to reject picking up the overweight objects. However the design has to be adjusted to fit according to this model. The legs has to be calibrated to achieve its optimal performance. The ultimate goal for this is to make the robot  autonomous to perform various desired tasks.<br> <br>
+								</p>
+							</div>
+							<div>
+								<p>
+									>>>Wheeled Robots or Legged Robots? <br> 
+									This is an ultimate question which has many answers  also came across the concept of hybrid mobility which ANYmal demonstrated for quadrupedal robots. I was really fascinated by the robot consisting wheels and legs at the same time.<br> <br>
+
+									This robo unlocks the perks of both kind of mobilities along with the stable configuration. The concern which i stand of is the shock absorption of the robot's limbs when it climbs high, it can cause damage to the joints. It cannot be sudden but pretty overtime. In this case i wouldn't mind to appreciate ATLAS robot by Boston Dynamics which is considered among the most successful robots of all time. It can be seen from its backflip that how the people have put efforts in shock absorption. Hexapods lacks a lot in energy efficiency because it contains several servos while wheeled robots has can save a lot of energy comparatively but lacks in  maneuver.  Wheeled robots stand their own advantages for it use case, but quadrupods and hexapods has their own perks.  <br> <br>
+ 
+								</p>
+							</div> 
+
+							
+							<article>
+								<img src="images/pic 15.png" alt="">
+								<p>Source: ETH ZÜRICH</p>
+							</article>
+							
+						
+					</div>
+				</div>
+
+				
+					
+	
+			</section>
+				
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
